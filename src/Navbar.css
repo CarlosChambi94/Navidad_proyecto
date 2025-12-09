@@ -1,0 +1,204 @@
+/* Fondo GIF */
+.background-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.pinimg.com/originals/1e/fe/a3/1efea3eefc793f82981ac3223ce03fe9.gif") center/cover no-repeat;
+    z-index: -10;
+}
+
+/* Overlay opcional */
+.background-gif::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.0); /* sin oscurecer */
+    z-index: -5;
+}
+
+/* Navbar grande */
+.nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 15px 50px !important;  /* más grande */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(7px);
+    border-bottom: 2px solid rgba(255,255,255,0.35);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    height: 200px;                  /* más alto */
+}
+
+/* Logo grande */
+.nav .logo {
+    font-size: 36px !important;    /* mucho más grande */
+    margin-top: 0px !important;
+    color: rgb(0, 225, 255);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(0, 153, 255), 0 0 12px red;
+}
+
+/* Menú grande */
+.nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;                     /* más espacio entre cuadros */
+}
+
+/* Cuadros grandes */
+.nav .menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px !important;    /* letras más grandes */
+    padding: 12px 22px !important; /* cuadros más grandes */
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+    color: white !important;
+    line-height: 1 !important;
+    transition: 0.25s;
+}
+
+/* Hover llamativo */
+.nav .menu li a:hover {
+    background: gold;
+    color: #6a0000 !important;
+    box-shadow: 0 0 12px gold;
+}
+
+/* Luces navideñas */
+.lights-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 25;
+}
+
+.lights {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6px 0;
+    list-style: none;
+}
+
+.lights li {
+    width: 12px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0 0 10px red;
+    animation: blink 1.4s infinite alternate;
+}
+
+.lights li:nth-child(odd) {
+    background: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    animation-delay: 0.3s;
+}
+
+.lights li:nth-child(3n) {
+    background: #00caff;
+    box-shadow: 0 0 10px #00caff;
+    animation-delay: 0.6s;
+}
+
+@keyframes blink {
+    0% { opacity: 0.3; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding-bottom: 12px;
+    }
+
+    .nav .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav .logo {
+        font-size: 28px !important;
+    }
+
+    .nav .menu li a {
+        font-size: 16px !important;
+        padding: 10px 16px !important;
+    }
+}
+.img {
+    width: 300px;       /* Ancho fijo */
+    height: auto;       /* Alto automático para mantener proporción */
+    max-width: 100%;    /* Máximo 100% del contenedor */
+    height: auto;       /* Mantiene proporción */
+}
+
+
+
+
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;       /* altura del apartado */
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.inicio-contenido {
+    background: rgba(0, 0, 0, 0.4);   /* semi-transparente sobre el GIF */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    max-width: 600px;
+}
+
+/* Titular */
+.inicio-contenido h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: gold;
+    text-shadow: 0 0 8px gold, 0 0 10px red;
+}
+
+/* Texto */
+.inicio-contenido p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+.btn-inicio {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: gold;
+    color: #6a0000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-inicio:hover {
+    background: #ffd700;
+    box-shadow: 0 0 10px gold;
+}
+.logo{
+    font-family: "Fredoka One", cursive;
+
+}

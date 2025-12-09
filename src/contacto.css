@@ -1,0 +1,127 @@
+.contacto-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+
+
+    background-image: url("https://i.makeagif.com/media/8-17-2016/kRV--0.gif");
+    background-size: cover;
+    background-position: center;
+
+
+    backdrop-filter: brightness(0.8);
+
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.contacto-container h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px red;
+}
+
+.botones-contacto {
+    display: grid;
+    gap: 15px;
+}
+
+.btn-contacto {
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+
+.whatsapp {
+    background: rgba(0, 150, 0, 0.8);
+}
+.email {
+    background: rgba(0, 100, 255, 0.8);
+}
+.llamada {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.btn-contacto:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px white;
+}
+.contacto-lugar {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+
+
+    background-image: url("https://i.pinimg.com/originals/64/a4/af/64a4af394f9f4ad7c931f987662b7ec0.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    backdrop-filter: brightness(0.7);
+
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.contacto-lugar h1 {
+    font-size: 38px;
+    color: white;
+    text-shadow: 0 0 15px red, 0 0 5px white;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 18px;
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-shadow: 0 0 5px black;
+}
+
+.botones-lugar {
+    display: grid;
+    gap: 20px;
+}
+
+.btn-lugar {
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    transition: 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+
+.reserva {
+    background: rgba(255, 0, 0, 0.85);
+}
+.info {
+    background: rgba(0, 120, 255, 0.85);
+}
+.soporte {
+    background: rgba(0, 180, 0, 0.85);
+}
+.ubicacion {
+    background: rgba(255, 150, 0, 0.85);
+}
+
+.btn-lugar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+}
