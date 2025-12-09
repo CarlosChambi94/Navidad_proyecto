@@ -21,11 +21,11 @@ function App() {
     <nav class="nav">
       <div class="logo">FELIZ NAVIDAD</div>
       <ul class="menu">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/Pagina2">Regalos</a></li>
-        <li><a href="/Pagina3">Decoración</a></li>
-        <li><a href="/Pagina4">Eventos</a></li>
-        <li><a href="/Pagina5">Contacto</a></li>
+        <li><a href="/Navidad_proyecto/">Inicio</a></li>
+        <li><a href="/Navidad_proyecto/Pagina2">Regalos</a></li>
+        <li><a href="/Navidad_proyecto/Pagina3">Decoración</a></li>
+        <li><a href="/Navidad_proyecto/Pagina4">Eventos</a></li>
+        <li><a href="/Navidad_proyecto/Pagina5">Contacto</a></li>
       </ul>
     </nav>
 
@@ -35,11 +35,11 @@ function App() {
 
 
       <Routes>
-        <Route path='/' element={<Pagina1/>}/>
-        <Route path="/pagina2" element={<Pagina2/>}/>
-        <Route path="/pagina3" element={<Pagina3/>}/>
-        <Route path="/pagina4" element={<Pagina4/>}/>
-        <Route path="/pagina5" element={<Pagina5/>}/>
+        <Route path='/Navidad_proyecto/' element={<Pagina1/>}/>
+        <Route path="/Navidad_proyecto/Pagina2" element={<Pagina2/>}/>
+        <Route path="/Navidad_proyecto/Pagina3" element={<Pagina3/>}/>
+        <Route path="/Navidad_proyecto/Pagina4" element={<Pagina4/>}/>
+        <Route path="/Navidad_proyecto/Pagina5" element={<Pagina5/>}/>
       </Routes>
     </>
   );
