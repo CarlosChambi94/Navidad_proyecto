@@ -2,6 +2,10 @@
   padding: 15px;
   border-radius: 12px;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
 }
 
 .decoraciones-titulo {
@@ -10,6 +14,7 @@
   font-weight: bold;
   margin-bottom: 12px;
   color: #c0392b;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
 .decoraciones-grid {
@@ -19,7 +24,7 @@
 
 /* Tarjetas pequeñas */
 .decoracion-card {
-  background: #0acead;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -40,5 +45,5 @@
 .decoracion-card p {
   margin: 5px 0 0;
   font-size: 0.85rem;
-  color: #666;
+  color: #444;
 }
